@@ -9,9 +9,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <title>Oxygen</title>
     <link rel="stylesheet" href="ss.css">
+    <link rel="stylesheet" href="animate.css">
+    
     
     </head>
 
@@ -63,7 +74,7 @@
         </slider>       
          <div id="second"> 
            <!--covid 19-->
-           <div class="container-flued ">
+           <div class="container-flued " data-aos="fade-top">
                 <br><h2>FOOD AND PANDEMICS – MAKING THE CONNECTION:</h2>
                 <div class="jumbotron" style="background-color:rgb(0, 0, 0); color: rgb(255, 255, 255); width:70%; margin-left:15%;">
                     <h1 class="display-4" style="margin-right: 70%;">COVID-19</h1><br>
@@ -75,9 +86,9 @@
                     </p>
                   </div>
 <!--APPETIZERS-->
-                  <h2>TOP 5 HEALTHY APPETIZERS</h2>
+                  <h2 data-aos="fade-top">TOP 5 HEALTHY APPETIZERS</h2>
                   <div class="card-group" style="margin: 30px; margin-left: 45px;">
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                       <img class="card-img-top" src="38.jpg" alt="BBQ Crockpot Chicken Wings" style="border-radius: 10px;color: white;">
                       <div class="card-body">
                         <a href="bbq.html"><h5 class="card-title " style="color: white;">BBQ Crockpot Chicken Wings</h5></a>
@@ -85,7 +96,7 @@
                       <div class="card-footer">
                       </div>
                     </div>
-                    <div class="card">
+                    <div class="card"data-aos="fade-right">
                       <img class="card-img-top" src="34.jpg" alt="Card image cap" style="border-radius: 10px;">
                       <div class="card-body">
                         <a href="Crispy.html"><h5 class="card-title">Crispy Baked Chicken Wings</h5></a>
@@ -93,7 +104,7 @@
                       <div class="card-footer">
                       </div>
                     </div>
-                    <div class="card">
+                    <div class="card"data-aos="fade-left">
                       <img class="card-img-top" src="40.jpg" alt="Card image cap"style="border-radius: 10px;">
                       <div class="card-body">
                         <a href="Nachos.html"><h5 class="card-title">Baked Chicken Nachos</h5></a>
@@ -101,7 +112,7 @@
                       <div class="card-footer">
                       </div>
                     </div>
-                    <div class="card">
+                    <div class="card"data-aos="fade-left">
                       <img class="card-img-top" src="36.jpg" alt="Card image cap"style="border-radius: 10px;'">
                       <div class="card-body">
                         <a href="Guacamole.html"><h5 class="card-title">Homemade Guacamole</h5></a>
@@ -109,35 +120,119 @@
                       <div class="card-footer">
                       </div>
                     </div>
+
                     
                   </div>
-                
-<div class="item" data-aos="fade-up">1</div>
-<div class="item" data-aos="fade-down">2</div>
-<div class="item" data-aos="fade-right">3</div>
-<div class="item" data-aos="fade-left">4</div>
 
-<div class="item" data-aos="zoom-in">5</div>
-<div class="item" data-aos="zoom-out">6</div>
+                  <!--body types-->
+                  <div class="container-flued" style="margin-left: 10%; margin-right: 10%;">
+                    <div id="accordion">
+                      <div class="card">
+                        <div class="card-header" id="headingOne" >
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" style="background-color: green; border-radius: 10px; color: white; float: left;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                             GYM BODY
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="card-group" style="margin: 30px; margin-left: 45px;">
+                              <div class="card" data-aos="fade-right">
+                                <img class="card-img-top" src="45.jpg" alt="BBQ Crockpot Chicken Wings" style="border-radius: 10px;color: white;">
+                                <div class="card-body">
+                                  <a href="bbq.html"><h5 class="card-title " style="color: white;">Breakfast</h5></a>
+                                </div>
+                                <div class="card-footer">
+                                </div>
+                              </div>
+                              <div class="card"data-aos="fade-right">
+                                <img class="card-img-top" src="46.jpg" alt="Card image cap" style="border-radius: 10px; height: 467px;">
+                                <div class="card-body">
+                                  <a href="Crispy.html"><h5 class="card-title">Lunch</h5></a>
+                                </div>
+                                <div class="card-footer">
+                                </div>
+                              </div>
+                              <div class="card"data-aos="fade-left">
+                                <img class="card-img-top" src="47.jpg" alt="Card image cap"style="border-radius: 10px;height: 467px; ">
+                                <div class="card-body">
+                                  <a href="Nachos.html"><h5 class="card-title">Dinner</h5></a>
+                                </div>
+                                <div class="card-footer">
+                                </div>
+                              </div>
+                              <div class="card"data-aos="fade-left">
+                                <img class="card-img-top" src="48.jpg" alt="Card image cap"style="border-radius: 10px; height: 467px;">
+                                <div class="card-body">
+                                  <a href="Guacamole.html"><h5 class="card-title">Snaks</h5></a>
+                                </div>
+                                <div class="card-footer">
+                                </div>
+                              </div>
+          
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed"  style="background-color: green; border-radius: 10px; color: white;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              FAT BODY
+                            </button>
+                          </h5>
+                        </div>
 
-<div class="item" data-aos="slide-up">7</div>
-
-<div class="item" data-aos="flip-up">8</div>
-<div class="item" data-aos="flip-down">9</div>
-<div class="item" data-aos="flip-right">10</div>
-<div class="item" data-aos="flip-left">11</div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed"  style="background-color: green; border-radius: 10px; color: white;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              SKINNY BODY
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  
+                  <!--NOTE-->
+                <br><br>
+                  <div class="note">
+                    Do not wait until you feel thirsty .. always drink water!<br><br>
+                  </div>
            
          <!--Social media links -->
+         
                 <div style="height: 10%;margin-left: 40%;" >
                   <a href="#" class="fa fa-facebook"></a>
-                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-twitter"></a> 
                   <a href="#" class="fa fa-google"></a>
                   <a href="#" class="fa fa-linkedin"></a>
-                  <a href="#" class="fa fa-youtube"></a>
+                  <a href="#second" class="fa fa-youtube"></a>
                   <a href="#" class="fa fa-instagram"></a>
                 </div>
         
-            <script src="java.js"></script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script src="java.js"></script>
+    <script>
+      AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+      });
+    </script>
 </body>
 </html>
     
