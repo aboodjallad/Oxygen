@@ -1,134 +1,133 @@
-html,body
-{
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+html,
+body {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
-#second
-{
+#second {
   position: relative;
   background-color: black;
   height: 500px;
-  top:100%;
+  top: 100%;
 }
 
-h2
-{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align: center;
+h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-p
-{
-    color: green;
+p {
+  color: rgb(156, 252, 215);
 }
 
-a.button
-{
-    background-color: red;
-    padding: 1em,3em;
-    color: white;
-    display: inline-block;
-    border-radius: 100px;
-    text-decoration: none;
-    margin-left: 50%;
-    animation-duration: 2s;
-
+a.button {
+  background-color: red;
+  padding: 1em, 3em;
+  color: white;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  margin-left: 50%;
+  animation-duration: 2s;
 }
-slider
-{
-    display: block;
+slider {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: absolute;
+}
+
+slider > * {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  animation: slide 12s infinite;
+}
+.card-title {
+  color: white;
+}
+.card {
+  background-color: black;
+}
+slide:nth-child(1) {
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url(29.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+slide:nth-child(2) {
+  animation-delay: 2s;
+  background-image: url(31.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+slide:nth-child(3) {
+  animation-delay: 5s;
+  background-image: url(28.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+slide:nth-child(4) {
+  animation-delay: 8s;
+  background-image: url(23.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+slide p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 340px;
+  color: rgb(240, 230, 230);
+}
+
+@keyframes slide {
+  0% {
+    left: 100%;
     width: 100%;
-    height: 100%;
-    background-color: #1f1f1f;
-    overflow: hidden;
-    position: absolute;
-}
-
-slider > *
-{
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #1f1f1f;
-    overflow: hidden;
-    animation: slide 12s infinite;
-}
-.card-title
-{
-    color: white;
-}
-.card
-{
-    background-color: black;
-}
-slide:nth-child(1)
-{
+  }
+  5% {
     left: 0%;
-    animation-delay: -1s;
-    background-image: url(29.jpg);
-    background-size: cover;
-    background-position: top;
-}
-
-slide:nth-child(2)
-{
-    animation-delay: 2s;
-    background-image: url(31.jpg);
-    background-size: cover;
-    background-position: top;
-}
-
-slide:nth-child(3)
-{
-    
-    animation-delay: 5s;
-    background-image: url(28.jpg);
-    background-size: cover;
-    background-position: top;
-}
-
-slide:nth-child(4)
-{
-    animation-delay: 8s;
-    background-image: url(23.jpg);
-    background-size: cover;
-    background-position: top;
-}
-
-slide p
-{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 70px;
-    text-align: center;
-    display: inline-block;
+  }
+  25% {
+    left: 0%;
+  }
+  30% {
+    left: -100%;
     width: 100%;
-    margin-top: 340px;
-    color: rgb(240, 230, 230);
-}
-
-@keyframes slide
-{
-    0% {left: 100%; width: 100%;}
-    5% {left: 0%;}
-    25% {left: 0%;}
-    30% {left: -100%; width: 100%;}
-    30.0001% {left: -100%; width: 0%;}
-    100% {left: 100%; width: 0%;}
-
-
+  }
+  30.0001% {
+    left: -100%;
+    width: 0%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
 }
 
 nav {
-height: 10vh;
-background:black;
+  height: 10vh;
+  background: black;
 }
 
 .fa {
@@ -141,7 +140,7 @@ background:black;
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
@@ -174,27 +173,55 @@ background:black;
   color: white;
 }
 
-  
-.c{
+.input {
+  background-color: rgb(156, 255, 253);
+  border: rgb(156, 255, 253);
+}
+
+.c {
   width: 100px;
   height: 100px;
   background: red;
   position: relative;
   animation-name: example;
-  animation-duration: 3s;  
+  animation-duration: 3s;
   animation-delay: 2s;
-  animation-fill-mode: both ;
+  animation-fill-mode: both;
 }
 
-@keyframes example {
-  from {top: 0px; background-color: yellow;}
-  to {top: 200px; background-color: blue;}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
 }
 
 * {
   box-sizing: border-box;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(156, 255, 253);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
 .item {
   width: 200px;
   height: 200px;
@@ -202,18 +229,157 @@ background:black;
   padding-top: 75px;
   background: #ccc;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   font-size: 3em;
 }
 
-
-.note
-{
-  color: white; 
+.note {
+  color: white;
   background-color: rgb(0, 0, 0);
-  border-left: green solid;
-   padding: 1rem;
-   margin: 1.6%;
-   height: 50px;
+  border-left: rgb(30, 84, 87) solid;
+  padding: 1rem;
+  margin: 1.6%;
+  height: 50px;
 }
- 
+
+#h1 {
+  color: rgb(255, 255, 255);
+  margin-left: 280px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 35%;
+}
+
+.textbox {
+  margin-left: 300px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+}
+
+#dy {
+  width: 210px;
+  height: 210px;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  border: rgb(0, 0, 0) solid;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-color: black;
+}
+
+#sl {
+  width: 210px;
+  height: 210px;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  border: rgb(0, 0, 0) solid;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-color: black;
+}
+#svg {
+  width: 210px;
+  height: 210px;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  border: rgb(0, 0, 0) solid;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-color: black;
+}
+#iron {
+  width: 210px;
+  height: 210px;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  border: rgb(0, 0, 0) solid;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-color: black;
+}
+#power {
+  width: 210px;
+  height: 210px;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  border: rgb(0, 0, 0) solid;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-color: black;
+}
+#ih {
+  width: 210px;
+  height: 210px;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  border: rgb(0, 0, 0) solid;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-color: black;
+}
+#sar {
+  width: 210px;
+  height: 210px;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  border: rgb(0, 0, 0) solid;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-color: black;
+}
+#eagle {
+  width: 210px;
+  height: 210px;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  border: rgb(0, 0, 0) solid;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-color: black;
+}
+
+#gymp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+h3 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#thanks {
+  display: flex;
+  border: rgb(156, 255, 253);
+  border-radius: 5px;
+  background-color: rgb(156, 255, 253);
+  height: 50px;
+  width: 100px;
+  padding-left: 18px;
+  padding-top: 17px;
+}
+
+.ourGyms {
+  border-radius: 50%;
+  border: black solid;
+  display: inline;
+  justify-content: space-around;
+}
