@@ -1,0 +1,36 @@
+#h1{
+    color: purple;
+  }
+  
+  #lang {
+    text-align: right;
+    padding-right: 30px;
+    word-spacing: 15px;
+  }
+
+  .textbox {
+    margin-left: 300px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+  }
+  .textboxr {
+    width: 40px;
+    position: absolute;
+    left: 60%;
+  }
+  .textboxw {
+    width: 40px;
+    position: absolute;
+   left: 40%;
+  }
+  
+  /*
+  male 100*(-98.42 + 4.15*waist - 0.082*weight)/weight. 
+  females 100*(-76.76 + 4.15*waist - 0.082*weight)/weight.
+  
+  For men: BMR = 13.75 weight(kg) + 5.003 height(cm) - 6.775 age + 66.5. 
+  For women: BMR = 9.563 weight(kg) + 1.850 height(cm) - 4.676 age + 655.1.
+  
+  
+  */

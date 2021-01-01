@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="sss.css">
+    <link rel="stylesheet" href="calcu.js">
+   <title>Oxygen</title>
+  <h1 id="h1" style="text-align: center; margin-right: 100px;">Body fat calculator</h1>
+</head>
+  <body style="color: rgb(255, 255, 255);   background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 0, 0));" >  
+       <div class="container" >
+              <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black" style="background-color: rgb(228, 228, 228);"> 
+                  <a class="navbar-brand" href="edited.html" style="color: rgb(0, 0, 0);" >OXYGEN
+                     <!-- <img src="l.png" style="position:relative; top:90%; width: 155px; height: 70px; margin-left: 10px;">-->
+                  </a>    
+                  <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" ></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="edited.html" style=" margin-left: 30px; color: rgb(0, 0, 0);">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://www.google.com/search?q=covid+19&oq=covid+19&aqs=chrome.0.0i457j0i131i433j0i433j0i131i433j0l4.14835j0j7&sourceid=chrome&ie=UTF-8#scso=_wVzKX_vzHcSXkwWhvZioAw13:0" style="color: rgb(0, 0, 0);">COVID-19</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: rgb(0, 0, 0);" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown  
+                        </a>
+                        <div class="dropdown-menu"  style="color: rgb(0, 0, 0);" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item"  style="color: rgb(0, 0, 0);" href="#">Action</a>
+                          <a class="dropdown-item"  style="color: rgb(0, 0, 0);" href="#">Another action</a>
+                          <div class="dropdown-divider"  style="color: rgb(0, 0, 0);" ></div>
+                          <a class="dropdown-item" href="#"  style="color: rgb(0, 0, 0);" >Something else here</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="f.html"  style="color: rgb(0, 0, 0);" >calculator</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input style="color: rgb(156, 252, 215);" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button style="color: rgb(255, 255, 255); border: rgb(255, 253, 253) ;background-color: rgb(73, 73, 73);" class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+                    </form>
+                  </div>
+                </nav>
+             </div>
+<br><br><br>
+    <div class="container">
+       <h1 id="h1" style="text-align: center; margin-right: 100px; border-radius: 10px; border: rgb(0, 0, 0);" >Body fat calculator</h1>
+    <form>
+     <label for="weight">Weight</label> <input class="textbox" name="weight" type="number" id="weight"> kg <br><br>
+    </form>
+      Height <input class="textbox" type="number" id="height"> cm <br><br>
+    Waist <input class="textbox" type="number" id="waist"> cm <br><br>
+    
+      Age <input class="textbox" type="number" id="age"> years <br><br>
+ 
+      
+     
+      <input type="radio" name="gender" value="male" onchange="sexcm();calc();" > Male 
+        <input type="radio" name="gender" id="sex" value="female" onchange="sexcf();calc();"> Female 
+      <br><br>
+    <input style="color: white; background-color: rgb(73, 73, 73); border: rgb(0, 0, 0);" type = "button"
+                   id = "calc"
+                   value = "Calculate" onclick="calc()" /> 
+        <input style="color: rgb(255, 255, 255); background-color: rgb(73, 73, 73); border: rgb(0, 0, 0);" type = "button"
+                   id = "reset"
+                   value = "Reset" onclick="reset()" /> <br><br>
+    <label>Waist-to-Height Ratio (WHtR)</label>
+            <input class="textbox" style="width: 100px;" type = "number"
+                   id = "whtr"
+                   value = "0" /> %   (ideal 45.8% for men)<br><br>
+    <label>Body Fat</label>
+            <input class="textbox" type = "number"
+                   id = "bodyfat"
+                   value = "0" /> %<br><br>
+    <label>Lean Body Mass</label>
+            <input class="textbox" type = "number"
+                   id = "leanbodymass"
+                   value = "0" /> kg<br><br>
+    
+    <label >Basal Metabolic Rate (BMR)</label>
+            <input class="textbox" type = "number"
+                   id = "bmr"
+                   value = "0" /> kcals/day<br><br>
+    <label>Willoughby Athlete Weight</label>
+            <input class="textbox" type ="number"
+                   id = "waw"
+                   value = "0"/> kg <br><br>
+
+                   <div class="footer" style="background-color: rgb(20.5, 20.5, 20.5);">
+                    <div style="height: 10%;">
+                      <a href="#" class="fa fa-facebook" style="background-color: rgb(20.5, 20.5, 20.5);"></a>
+                      <a href="#" class="fa fa-twitter" style="background-color: rgb(20.5, 20.5, 20.5);"></a> 
+                      <a href="#" class="fa fa-google" style="background-color: rgb(20.5, 20.5, 20.5);"></a>
+                      <a href="#" class="fa fa-linkedin" style="background-color: rgb(20.5, 20.5, 20.5);"></a>
+                      <a href="#second" class="fa fa-youtube" style="background-color: rgb(20.5, 20.5, 20.5);"></a>
+                      <a href="#" class="fa fa-instagram" style="background-color: rgb(20.5, 20.5, 20.5);"></a>
+                    </div>
+               </div>      
+  
+    
+    
+    <br>
+</div>
+<script src="calcu.js"></script>
+
+  </body>
+</html>
